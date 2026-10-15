@@ -6,29 +6,44 @@
     <title>Document</title>
 
     <style>
-    #main{
-        height: 300px;
-        width: 300px;
-        background-color:aquamarine;
-        border:thin solid red;
-    }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
 
-    預設的樣式         -小畫面(手機畫面)
+        #main {
+            height: 300px;
+            width: 300px;
+            background-color: aquamarine;
+            border: 2px solid red;
+            margin: 50px auto;
+            box-sizing: border-box;
+        }
 
-@media screen and (min-width:480px) {  -中畫面
-    ...
-}
-@media screen and (min-width:720px) {  -中大畫面
-    ...
-}
-@media screen and (min-width:1040px) {  -大畫面
-    ...
-}
+        /* 預設樣式 - 小畫面 (手機畫面) */
 
-</style>
+        @media screen and (min-width: 480px) {
+            #main {
+                width: 420px;
+            }
+        }
+
+        @media screen and (min-width: 720px) {
+            #main {
+                width: 600px;
+            }
+        }
+
+        @media screen and (min-width: 1040px) {
+            #main {
+                width: 900px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="main"></div>
 </body>
 
 
