@@ -6,44 +6,30 @@
     <title>Document</title>
 
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
+        
+    #main{
+        height: 300px;
+        width: 300px;
+        background-color:rgb(21, 122, 204);
+        border:thin solid rgb(250, 88, 39);
+    }
 
-        #main {
-            height: 300px;
-            width: 300px;
-            background-color: aquamarine;
-            border: 2px solid red;
-            margin: 50px auto;
-            box-sizing: border-box;
-        }
+    
+@media screen and (max-width: 768px) {
+    #main{
+        background-color: rgb(121, 235, 15);
+    }
+@media screen and (max-width: 1024px) {
+    #main{
+        background-color: rgb(209, 24, 178);
+    }
+    }  
+}
 
-        /* 預設樣式 - 小畫面 (手機畫面) */
-
-        @media screen and (min-width: 480px) {
-            #main {
-                width: 420px;
-            }
-        }
-
-        @media screen and (min-width: 720px) {
-            #main {
-                width: 600px;
-            }
-        }
-
-        @media screen and (min-width: 1040px) {
-            #main {
-                width: 900px;
-            }
-        }
-    </style>
+</style>
 </head>
 <body>
-    <div id="main"></div>
+    <div id="main">Hello, World!</div>
 </body>
 
 
